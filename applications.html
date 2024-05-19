@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="CSS/style.css" rel="stylesheet">
+<script type="text/javascript" src="Java/script.js"></script>
+<title>Applications</title>
+
+
+</head>
+<body>
+
+<nav id="navbar" class="navbar">
+  <a id="head" href="index.html">Hot Beans Web</a>
+  <button class="toggle-button">☰</button>
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="job-details.html">Job Details</a></li>
+      <li><a class="nav-link active" href="applications.html">Applications</a></li>
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+  </ul>
+</nav>
+<br><br>
+
+<form action="submit_application.php" id="back-container" method="POST" enctype="multipart/form-data">
+    <h2 id="formTitle">Hot Beans Web Application Form</h2>
+    
+    <!-- Personal Information -->
+    <fieldset class="form">
+        <legend>Personal Information</legend>
+        <label for="full-name">Full Name *</label><br>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+        
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number *</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="start-date">Available Start Date *</label><br>
+        <input type="date" id="start-date" name="start-date" required><br><br>
+
+        <label for="employment-status">Current Employment Status *</label><br>
+        <select id="employment-status" name="employment-status" required>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+        </select><br><br>
+    </fieldset>
+    
+    <!-- Address Information -->
+    <fieldset class="form">
+        <legend>Address Information</legend>
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="postcode">Postal Code</label><br>
+        <input type="text" id="postcode" name="postcode"><br><br>
+        
+        <label for="country">Country</label><br>
+        <input type="text" id="country" name="country"><br><br>
+    </fieldset>
+    
+    <!-- Additional Information -->
+    <fieldset class="form">
+        <legend>Additional Information</legend>
+        <label for="portfolio">Portfolio URL (if applicable)</label><br>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+        
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <label for="CV">Upload CV *</label>
+        <input type="file" id="CV" name="CV" accept=".pdf,.doc,.docx" required><br>
+        <small>Accepted formats: PDF, DOC, DOCX</small>
+    </fieldset>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Application">
+</form>
+
+</body>
+ <div id="page-container">
+   <div id="content-wrap">
+     <!-- all other page content -->
+   </div>
+   <footer id="footer">
+   	<p>All Rights Reserved</p>
+   </footer>
+ </div>
+</html>
