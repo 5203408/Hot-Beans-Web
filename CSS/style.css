@@ -409,6 +409,7 @@ input[type="submit"]:hover {
   max-width: 300px;
   margin: 0 10px;
   text-align: center;
+  padding: 20px;
 }
 
 .card img, .web img {
